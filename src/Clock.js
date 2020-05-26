@@ -36,7 +36,7 @@ class Clock extends Component {
   render(){
     return (
       <div className="clock">
-        <p>Temps écoulés : <strong>{ this.state.seconds }</strong> secondes</p>
+        <p>Temps écoulé : <strong>{ this.state.seconds }</strong> secondes</p>
       </div>
 
     )
