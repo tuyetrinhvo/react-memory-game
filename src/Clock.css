@@ -1,0 +1,7 @@
+.memory>.clock {
+    font-size: 0.7em;
+    width: calc(100% - 0.4em);
+    margin: 0.2em;
+    text-align: left;
+    font-family: Menlo, Monaco, Consolas, Inconsolata, 'Courier New', monospace;
+}
