@@ -13,10 +13,9 @@ class Clock extends Component {
 
   componentWillUnmount(){
     clearInterval(this.counterID);
-  
   }
 
-  counter(seconds){
+  counter(seconds){ 
     if (this.props.guesses === 0){
       this.setState({
         seconds: 0

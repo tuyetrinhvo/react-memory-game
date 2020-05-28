@@ -9,14 +9,20 @@ const HIDDEN_SYMBOL = '❓';
 // on dispense des accolades de bloc return
 // card, feedback, onclick sont les props (propriétés)
 // onClick est un évènement dans JSX
-const Card = ({card, feedback, index, onclick}) => (
-    //JSX
-    <div className={`card ${feedback}`} onClick={() => onclick(index)}>
-        <span className="symbol">
+const Card = ({card, feedback, index, onclick, won}) => {
+    if(!won) {
+        return ( 
+        <div className={`card ${feedback}`} onClick={() => onclick(index)}>
+            <span className="symbol">
             {feedback === 'hidden' ? HIDDEN_SYMBOL : card}
-        </span>
-    </div>
-)
+            </span>
+        </div> 
+        )
+    } else {
+        return <div></div>
+    }
+
+}
 
 Card.propTypes = {
     card: PropTypes.string.isRequired,

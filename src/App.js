@@ -98,8 +98,8 @@ class App extends Component {
       this.setState({ matchedCardIndices: [...matchedCardIndices, ...newPair]})
     }
 
-    if(guesses === 36) {
-      
+    if(guesses === 54) {
+      this.setState({ cards: [] });
       setTimeout(() => this.initGame(), END_GAME);
     }
 
@@ -144,10 +144,11 @@ class App extends Component {
             key={index}
             index={index}
             onclick={this.handleCardClicked}
+            won={won}
           />
         ))}
 
-        {won && <div><p className="winner"><span role="img" aria-label="trophy">🏆</span></p>
+        {(won && guesses < 55) && <div><p className="winner"><span role="img" aria-label="trophy">🏆</span></p>
         <p className="winner">BRAVO ! Pressez ENTREE pour une nouvelle partie.</p></div> }
       </div>
     );
