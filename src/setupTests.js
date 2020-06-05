@@ -10,7 +10,8 @@ import createChaiJestDiff from 'chai-jest-diff';
 import Adapter from 'enzyme-adapter-react-16';
 import { configure as configureEnzyme } from 'enzyme';
 import createChaiEnzyme from 'chai-enzyme';
+import sinonChai from 'sinon-chai';
 
-chai.use(dirtyChai).use(createChaiJestDiff()).use(createChaiEnzyme());
+chai.use(dirtyChai).use(createChaiJestDiff()).use(createChaiEnzyme()).use(sinonChai);
 
 configureEnzyme({ adapter: new Adapter() });
