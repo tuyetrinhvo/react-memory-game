@@ -5,7 +5,7 @@ import './HighScoreInput.css';
 import { saveHOEntry } from './HallOfFame';
 
 class HighScoreInput extends Component {
-	state = { winner: '' };
+	state = { winner: '' }; // transforme value de l'input en champ contrôlé
 
 	// Arrow function for bidding
 	// on utilise l'initialiseur pour pouvoir passer par référence
@@ -23,6 +23,8 @@ class HighScoreInput extends Component {
 			player: this.state.winner
 		};
 		// onStored est une fonction de rappel (callback)
+		// onStored appellera avec le tableau hallOfFame à jour
+		// une fois celui-ci ajusté et persisté dans le navigateur
 		saveHOEntry(newEntry, this.props.onStored);
 	};
 	render () {
