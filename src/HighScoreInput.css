@@ -1,0 +1,42 @@
+.highScoreInput {
+  font-size: 1em;
+  width: calc(100% - 0.4em);
+  margin: 0.2em;
+}
+.highScoreInput input {
+  display: block;
+  width: 100%;
+  margin-bottom: 2em;
+  margin-top: 1em;
+  font-size: 1em;
+  color: deeppink;
+  border: 1px solid coral;
+  font-family: Menlo, Monaco, Consolas, Inconsolata, 'Courier New', monospace;
+}
+
+.highScoreInput p {
+  font-size: 1em;
+  text-align: center;
+  width: 400px;
+  justify-content: center;
+  color: deeppink;
+  line-height: 2em;
+  font-family: Menlo, Monaco, Consolas, Inconsolata, 'Courier New', monospace;
+}
+
+.highScoreInput button {
+  font-size: 0.7em;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  border-radius: 0.3em;
+  background-color: deeppink;
+  border: none;
+  box-shadow: 0.2em 0.2em 0.2em red;
+  justify-content: center;
+  margin: 4px 2px;
+  padding: 10px 24px;
+  color: white;
+  font-family: Menlo, Monaco, Consolas, Inconsolata, 'Courier New', monospace;
+}
+

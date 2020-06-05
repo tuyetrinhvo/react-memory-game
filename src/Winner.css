@@ -1,0 +1,13 @@
+.winner span {
+  font-size: 3em;
+  width: 400px;
+}
+
+p.winner {
+  font-size: 1em;
+  text-align: center;
+  width: 400px;
+  justify-content: center;
+  color: deeppink;
+  font-family: Menlo, Monaco, Consolas, Inconsolata, 'Courier New', monospace;
+}
