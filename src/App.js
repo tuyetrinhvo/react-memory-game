@@ -8,10 +8,10 @@ import HighScoreInput from './HighScoreInput';
 import HallOfFrame from './HallOfFame';
 import Winner from './Winner';
 
-const SIDE = 6,
-	SYMBOLS = '😀🎉💖🥰🎀😎🌼🧁😇🍀🍩🍑🥳🦋💩🧚‍♀️💍🐬👑🍄🌸🍔',
-	VISUAL_PAUSE_MSECS = 750,
-	END_GAME = 3000;
+const SIDE = 6;
+export const SYMBOLS = '😀🎉💖🥰🎀😎🌼🧁😇🍀🍩🍑🥳🦋💩🧚‍♀️💍🐬👑🍄🌸🍔';
+const VISUAL_PAUSE_MSECS = 750;
+const END_GAME = 3000;
 
 class App extends Component {
 	// un initialiseur de champ d'instance
