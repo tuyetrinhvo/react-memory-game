@@ -1,13 +1,40 @@
 .winner span {
-  font-size: 3em;
-  width: 400px;
+	font-size: 3em;
+	width: 500px;
 }
 
 p.winner {
-  font-size: 1em;
-  text-align: center;
-  width: 400px;
-  justify-content: center;
-  color: deeppink;
-  font-family: Menlo, Monaco, Consolas, Inconsolata, 'Courier New', monospace;
+	font-size: 1em;
+	text-align: center;
+	width: 500px;
+	justify-content: center;
+	color: deeppink;
+	font-family: Menlo, Monaco, Consolas, Inconsolata, 'Courier New', monospace;
+}
+
+@media (max-width: 414px) {
+	.winner span {
+		width: 400px;
+	}
+	p.winner {
+		width: 400px;
+	}
+}
+
+@media (max-width: 375px) {
+	.winner span {
+		width: 350px;
+	}
+	p.winner {
+		width: 350px;
+	}
+}
+
+@media (max-width: 320px) {
+	.winner span {
+		width: 50px;
+	}
+	p.winner {
+		width: 220px;
+	}
 }

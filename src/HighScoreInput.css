@@ -17,7 +17,7 @@
 .highScoreInput p {
   font-size: 1em;
   text-align: center;
-  width: 400px;
+  width: 500px;
   justify-content: center;
   color: deeppink;
   line-height: 2em;
@@ -40,3 +40,22 @@
   font-family: Menlo, Monaco, Consolas, Inconsolata, 'Courier New', monospace;
 }
 
+@media (max-width: 414px) {
+	.highScoreInput p {
+		width: 380px;
+	}
+}
+
+@media (max-width: 375px) {
+	.highScoreInput p {
+    width: 340px;
+    margin-left: 0;
+	}
+}
+
+@media (max-width: 320px) {
+	.highScoreInput p {
+    width: 200px;
+    margin-left: 0;
+	}
+}

@@ -5,7 +5,7 @@ import './HallOfFame.css';
 
 // composant pur fonctionnel ou fonction pure
 const HallOfFame = ({ entries }) => (
-	<div>
+	<div id="fame-block">
 		<h3>Tableau des gagnants</h3>
 		<table className="hallOfFame">
 			<thead>

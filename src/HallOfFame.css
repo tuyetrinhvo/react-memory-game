@@ -1,26 +1,42 @@
 .hallOfFame {
-    width: 100%;
-    border-collapse: collapse;
+	width: 100%;
+	border-collapse: collapse;
 }
 
 .hallOfFame .date,
 .hallOfFame .guesses,
 .hallOfFame .player {
-    text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .hallOfFame tr:nth-child(even) {
-    background: #eee;
+	background: #eee;
 }
 
 .hallOfFame th {
-    font-size: 0.9em;
-    padding-left: 10px;
-    padding-right: 10px;
+	font-size: 0.9em;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 h3 {
-    text-align: center;
+	text-align: center;
+}
+
+@media (max-width: 320px) {
+	#fame-block {
+		width: 220px;
+	}
+	.hallOfFame th {
+		font-size: 0.5em;
+	}
+	.hallOfFame td {
+		font-size: 0.7em;
+	}
+	h3 {
+		font-size: 0.9em;
+		text-align: center;
+	}
 }
