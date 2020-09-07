@@ -10,8 +10,8 @@ import Winner from './Winner';
 
 const SIDE = 6;
 export const SYMBOLS = '😀🎉💖🥰🎀😎🌼🧁😇🍀🍩🍑🥳🦋💩🧚‍♀️💍🐬👑🍄🌸🍔';
-const VISUAL_PAUSE_MSECS = 750;
-const END_GAME = 3000;
+const VISUAL_PAUSE_MSECS = 700;
+const END_GAME = 2000;
 
 class App extends Component {
 	// un initialiseur de champ d'instance
@@ -58,6 +58,7 @@ class App extends Component {
 				this.initGame();
 			}
 		});
+
 		this.initGame();
 	}
 
@@ -124,7 +125,7 @@ class App extends Component {
 		return shuffle(result);
 	}
 
-	initGame () {
+	initGame = () => {
 		this.setState({
 			cards: this.generateCards(),
 			currentPair: [],
@@ -132,7 +133,7 @@ class App extends Component {
 			matchedCardIndices: [],
 			hallOfFame: null
 		});
-	}
+	};
 
 	// index : position de card dans le tableau symbol
 	render () {
@@ -158,7 +159,7 @@ class App extends Component {
 					guesses < 55 &&
 					(hallOfFame ? (
 						<div>
-							<Winner />
+							<Winner onclick={this.initGame} />
 							<HallOfFrame entries={hallOfFame} />
 						</div>
 					) : (

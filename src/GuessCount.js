@@ -5,7 +5,7 @@ import './GuessCount.css';
 // composant pur fonctionnel ou fonction pure
 const GuessCount = ({ guesses }) => (
 	<div className="guesses">
-		{guesses > 54 ? <p>Vous avez perdu ! Rejouez !</p> : <p>Vous avez tenté : {guesses} fois</p>}
+		{guesses > 54 ? <h2>Vous avez perdu ! Rejouez !</h2> : <p>Vous avez tenté : {guesses} fois</p>}
 	</div>
 );
 

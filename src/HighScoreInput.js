@@ -27,22 +27,28 @@ class HighScoreInput extends Component {
 		// une fois celui-ci ajusté et persisté dans le navigateur
 		saveHOEntry(newEntry, this.props.onStored);
 	};
+
 	render () {
 		return (
-			<form className="highScoreInput" onSubmit={this.persistWinner}>
-				<p>
-					<label>
-						Bravo ! Entrez ton prénom ou Pressez ENTREE pour une nouvelle partie
-						<input
-							type="text"
-							autoComplete="given-name"
-							value={this.state.winner}
-							onChange={this.handleWinnerUpdate}
-						/>
-					</label>
-					<button type="submit">J'ai gagné !</button>
-				</p>
-			</form>
+			<div>
+				<form className="highScoreInput" onSubmit={this.persistWinner}>
+					<p>
+						<label>
+							Bravo ! Entrez ton prénom :
+							<input
+								type="text"
+								autoComplete="given-name"
+								value={this.state.winner}
+								onChange={this.handleWinnerUpdate}
+							/>
+						</label>
+						<button type="submit">J'ai gagné !</button>
+					</p>
+				</form>
+				<div className="highScoreInput" onClick={this.reloadPage}>
+					<p>Sinon, Pressez ENTREE ou Cliquez ici pour une nouvelle partie</p>
+				</div>
+			</div>
 		);
 	}
 }
