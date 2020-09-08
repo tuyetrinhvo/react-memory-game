@@ -27,6 +27,9 @@ class HighScoreInput extends Component {
 		// une fois celui-ci ajusté et persisté dans le navigateur
 		saveHOEntry(newEntry, this.props.onStored);
 	};
+	reloadPage = () => {
+		window.location.reload();
+	};
 
 	render () {
 		return (
